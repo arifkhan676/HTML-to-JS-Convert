@@ -1,4 +1,5 @@
 
+
 var h1=document.createElement("h1");
 h1.innerHTML="Hello world";
 document.getElementById("root").appendChild(h1);
@@ -43,4 +44,32 @@ ul.appendChild(list);
 nav.appendChild(ul);
 const navShow= document.getElementById("root");
 navShow.appendChild(nav);
+
+var divContainer=document.createElement("div");
+divContainer.classList.add("middle-container");
+
+var divProfile = document.createElement("div");
+divProfile.classList.add("profile");
+
+var imgPro=document.createElement("img");
+imgPro.classList.add("pro");
+imgPro.setAttribute("src","images/arif.png.jpg");
+imgPro.setAttribute("alt","arif profile");
+
+var h1 = document.createElement("h1");
+h1.innerHTML = "Md Ariful Hasan";
+
+var p = document.createElement("p");
+p.innerHTML = "Here is my testing portfolio";
+
+var divProfile = document.createElement("div");
+divProfile.classList.add("profile");
+
+divProfile.appendChild(imgPro);
+divProfile.appendChild(h1);
+divProfile.appendChild(p);
+
+divContainer.appendChild(divProfile);
+
+document.getElementById("root").appendChild(divContainer);
 

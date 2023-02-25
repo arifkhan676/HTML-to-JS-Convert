@@ -1,26 +1,4 @@
 
-
-var h1=document.createElement("h1");
-h1.innerHTML="Hello world";
-document.getElementById("root").appendChild(h1);
-
-var div=document.createElement("div");
-div.classList.add("row");
-
-var h2=document.createElement("h2");
-h2.innerHTML="I am h2";
-
-var p=document.createElement("p");
-p.innerHTML="I am p";
-
-div.appendChild(h2);
-div.appendChild(p);
-
-const parentElement=document.getElementById("root");
-parentElement.appendChild(div);
-
-
-
 const nav = document.createElement("nav");
 const ul= document.createElement("ul");
 
@@ -53,11 +31,11 @@ divProfile.classList.add("profile");
 
 var imgPro=document.createElement("img");
 imgPro.classList.add("pro");
-imgPro.setAttribute("src","images/arif.png.jpg");
-imgPro.setAttribute("alt","arif profile");
+imgPro.src="images/arif1.jpg";
+imgPro.alt="arifp";
 
 var h1 = document.createElement("h1");
-h1.innerHTML = "Md Ariful Hasan";
+h1.innerHTML = "Arif Ul Hasan";
 
 var p = document.createElement("p");
 p.innerHTML = "Here is my testing portfolio";
@@ -73,3 +51,38 @@ divContainer.appendChild(divProfile);
 
 document.getElementById("root").appendChild(divContainer);
 
+
+
+var navbarList = document.getElementsByClassName("nav-item");
+
+const li = document.createElement("li");
+const a = document.createElement("a");
+
+li.classList.add("nav-item");
+a.classList.add("nav-link");
+
+a.href="www.google.com";
+a.textContent="Google";
+
+li.appendChild(a);
+navbarList.appendChild(li);
+
+/*var h1=document.createElement("h1");
+h1.innerHTML="Hello world";
+document.getElementById("root").appendChild(h1);
+
+var div=document.createElement("div");
+div.classList.add("row");
+
+var h2=document.createElement("h2");
+h2.innerHTML="I am h2";
+
+var p=document.createElement("p");
+p.innerHTML="I am p";
+
+div.appendChild(h2);
+div.appendChild(p);
+
+const parentElement=document.getElementById("root");
+parentElement.appendChild(div);
+*/

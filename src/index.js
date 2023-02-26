@@ -146,3 +146,64 @@ const person = {
   }
 };
 document.getElementById("demo").innerHTML = person.fullName();
+
+
+const inch= 176;
+console.log(inch/28);
+
+function inc(inchi){
+ const ft=inchi/12;
+ return ft + " ft";
+}
+
+const ans= inc(72);
+console.log(ans);
+
+//array
+
+
+function inc(inchi){
+ const ft=inchi/12;
+ return ft + " ft";
+}
+
+const arr=[188,172,132];
+
+const val= inc(arr[1]);
+console.log(val);
+
+const randomName=["arif","hasan","biplob"];
+const value= randomName.length;
+
+function leapYear(year){
+  if(year%4==0){
+    return console.log(year + " is leap year");
+   }
+   else  {
+    return console.log(year + " is not leap year");
+
+   }
+}
+leapYear(34);
+
+//factorial  3! = 3*2*1
+/*
+function fact(val){
+   const sum=1;
+    for(var i=0; i<=val; i++){
+        sum=sum+i;
+    }
+    return sum;
+}
+const send= fact(9);
+console.log(send); */
+
+// while factorial
+
+const sum=1;
+const i=1;
+while(i <= 10){
+    sum= sum*i;
+    console.log(i, sum);
+   i++;
+}

@@ -43,6 +43,8 @@ p.innerHTML = "Here is my testing portfolio";
 var divProfile = document.createElement("div");
 divProfile.classList.add("profile");
 
+
+//divProfile.appendChild(button);
 divProfile.appendChild(imgPro);
 divProfile.appendChild(h1);
 divProfile.appendChild(p);
@@ -50,6 +52,21 @@ divProfile.appendChild(p);
 divContainer.appendChild(divProfile);
 
 document.getElementById("root").appendChild(divContainer);
+
+//button click 
+
+
+
+const button = document.createElement("button");
+button.classList.add("btn-dark");
+button.innerHTML="button";
+const btn =document.getElementById("root").appendChild(button);
+btn.addEventListener('click',displayDate =>{
+const newBtn =  document.getElementById("root").innerHTML=Date();
+   document.getElementById("root").appendChild(newBtn);
+   
+})
+
 
 
 
@@ -60,12 +77,14 @@ const a = document.createElement("a");
 
 li.classList.add("nav-item");
 a.classList.add("nav-link");
-
 a.href="www.google.com";
 a.textContent="Google";
 
 li.appendChild(a);
-navbarList.appendChild(li);
+
+//navbarList.appendChild(li);
+//document.getElementById("root").appendChild(navbarList);
+
 
 /*var h1=document.createElement("h1");
 h1.innerHTML="Hello world";
@@ -86,3 +105,44 @@ div.appendChild(p);
 const parentElement=document.getElementById("root");
 parentElement.appendChild(div);
 */
+
+const day = new Date().getDay();
+
+switch (day){
+  
+  case 0:
+    thisDay="Saturday";
+    break;
+
+    case 1:
+      thisDay="Sunday";
+      break;
+   
+        case 2:
+    thisDay = "Tuesday";
+    break;
+
+  case 3:
+   thisDay = "Wednesday";
+    break;
+
+  case 4:
+    thisDay = "Thursday";
+    break;
+
+  case 5:
+    thisDay = "Friday";
+    break;
+
+}
+document.getElementById("demo").innerHTML = day;
+
+const person = {
+  firstName: "Ariful",
+  lastName: "Hasan",
+  id: 5566,
+ fullName: function(){
+    return this.firstName + " " + this.lastName ;
+  }
+};
+document.getElementById("demo").innerHTML = person.fullName();

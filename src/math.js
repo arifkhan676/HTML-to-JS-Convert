@@ -95,18 +95,7 @@ else if(b>c){
     }
 }
 
-// high score of class
-/*
-console.log("high score of class");
 
-var marks=[34,56,99,14,75,68,56];
-var maxMarks=marks[0];
-
-for(var i=1;i<marks.length;i++){
-    maxMarks=maxMarks[i];
-}
-
-*/
 
 class person  {
     constructor(){
@@ -119,12 +108,12 @@ class person  {
       return this.firstName + " "+ this.lastName;
     }
   }
-  //console.log(new person.fullName());
+console.log(new person().fullName());
 
-    document.getElementById("demo").innerHTML = new person.fullName();
+   // document.getElementById("demo").innerHTML = new person.fullName();
   
     //create various types of names using class methods.
-    class person  {
+    class personPro  {
         constructor(f,l){
           this.firstName= f;
           this.lastName= l;
@@ -135,5 +124,14 @@ class person  {
           return this.firstName + " "+ this.lastName;
         }
       }
-      console.log(new person('nur','hossain').fullName());
+      console.log(new personPro('nur','hossain').fullName());
 
+
+
+ console.log("high score of class");
+var marks=[34,56,99,14,75,68,56];
+
+for(var i=1;i<marks.length;i++){
+   var  maxMarks=marks[i];
+   console.log(maxMarks);
+}

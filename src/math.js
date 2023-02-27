@@ -106,5 +106,34 @@ for(var i=1;i<marks.length;i++){
     maxMarks=maxMarks[i];
 }
 
-console.log(maxMarks);
 */
+
+class person  {
+    constructor(){
+      this.firstName= "Ariful";
+      this.lastName= "Hasan";
+      this.id= 5566;
+      
+    }
+   fullName() {
+      return this.firstName + " "+ this.lastName;
+    }
+  }
+  //console.log(new person.fullName());
+
+    document.getElementById("demo").innerHTML = new person.fullName();
+  
+    //create various types of names using class methods.
+    class person  {
+        constructor(f,l){
+          this.firstName= f;
+          this.lastName= l;
+          this.id= 5566;
+          
+        }
+       fullName() {
+          return this.firstName + " "+ this.lastName;
+        }
+      }
+      console.log(new person('nur','hossain').fullName());
+

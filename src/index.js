@@ -62,8 +62,18 @@ button.classList.add("btn-dark");
 button.innerHTML="button";
 const btn =document.getElementById("root").appendChild(button);
 btn.addEventListener('click',displayDate =>{
-const newBtn =  document.getElementById("root").innerHTML=Date();
-   document.getElementById("root").appendChild(newBtn);
+  const div=document.createElement('div');
+  const div1=document.createElement('div');
+  const h1=document.createElement('h1');
+   h1.innerHTML="arif bro";
+   h1.classList.add("headh1");
+  div1.classList.add("card");
+  div1.appendChild(h1);
+  
+  document.getElementById("root").appendChild(div1);
+  div.innerHTML=new Date().toString();
+  // const newBtn =new Date();
+   document.getElementById("root").appendChild(div);
    
 })
 
@@ -136,7 +146,7 @@ switch (day){
 
 }
 document.getElementById("demo").innerHTML = day;
-
+/*
 const person = {
   firstName: "Ariful",
   lastName: "Hasan",
@@ -146,4 +156,6 @@ const person = {
   }
 };
 document.getElementById("demo").innerHTML = person.fullName();
+*/
+
 

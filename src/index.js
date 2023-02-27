@@ -53,16 +53,65 @@ divContainer.appendChild(divProfile);
 
 document.getElementById("root").appendChild(divContainer);
 
+
+
+const below=document.createElement('div');
+const container=document.createElement('div');
+const textArea=document.createElement('textarea');
+const button=document.createElement('button');
+const parag=document.createElement('p');
+
+textArea.placeholder="write something..";
+button.innerHTML="post";
+//parag.innerHTML="hiiii";
+
+below.classList.add('below');
+container.classList.add('container');
+textArea.classList.add('textA');
+button.classList.add('dark');
+parag.classList.add('post');
+
+var newPost=document.querySelectorAll("textArea");
+
+
+button.addEventListener('click',displayDate=> {
+  //var newDiv=document.createElement('div');
+  parag.innerHTML=new Date();
+  newPost=this.innerHTML;
+  
+} )
+
+
+container.appendChild(textArea);
+container.appendChild(button);
+container.appendChild(parag);
+
+below.appendChild(container);
+
+document.getElementById("root").appendChild(below);
+
+
+
+//js work
+/*
+var contDiv=document.querySelectorAll("container");
+var buttonGet=document.querySelectorAll("dark");
+var para=document.querySelectorAll("post");
+para.innerHTML="hello";
+*/
+
+
+
 //button click 
+/*
 
-
-
+const headDiv = document.createElement('div');
 const button = document.createElement("button");
 button.classList.add("btn-dark");
 button.innerHTML="button";
 const btn =document.getElementById("root").appendChild(button);
 btn.addEventListener('click',displayDate =>{
-  const div=document.createElement('div');
+ // const div=document.createElement('div');
   const div1=document.createElement('div');
   const h1=document.createElement('h1');
    h1.innerHTML="arif bro";
@@ -71,15 +120,14 @@ btn.addEventListener('click',displayDate =>{
   div1.appendChild(h1);
   
   document.getElementById("root").appendChild(div1);
-  div.innerHTML=new Date().toString();
-  // const newBtn =new Date();
-   document.getElementById("root").appendChild(div);
+  div1.innerHTML=new Date().toString();
+   document.getElementById("root").appendChild(div1);
    
 })
 
 
 
-
+/*
 var navbarList = document.getElementsByClassName("nav-item");
 
 const li = document.createElement("li");
@@ -96,7 +144,7 @@ li.appendChild(a);
 //document.getElementById("root").appendChild(navbarList);
 
 
-/*var h1=document.createElement("h1");
+var h1=document.createElement("h1");
 h1.innerHTML="Hello world";
 document.getElementById("root").appendChild(h1);
 
@@ -145,7 +193,8 @@ switch (day){
     break;
 
 }
-document.getElementById("demo").innerHTML = day;
+ // document.getElementById("demo").innerHTML = day;
+
 /*
 const person = {
   firstName: "Ariful",

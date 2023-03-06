@@ -2,6 +2,13 @@
 const nav = document.createElement("nav");
 const ul= document.createElement("ul");
 
+
+const navBro=document.getElementById("navBhai").innerHTML="habijabi";
+
+
+//const navBro=document.querySelector(".nav-link");
+//navBro.innerHTML="heree";
+
 //create an array link objects
 const links = [
   {text: "Google", href:"https://www.google.com"},
@@ -60,6 +67,8 @@ const container=document.createElement('div');
 const textArea=document.createElement('textarea');
 const button=document.createElement('button');
 const parag=document.createElement('p');
+const par=document.createElement('p');
+
 
 textArea.placeholder="write something..";
 button.innerHTML="post";
@@ -68,23 +77,28 @@ button.innerHTML="post";
 below.classList.add('below');
 container.classList.add('container');
 textArea.classList.add('textA');
+textArea.id="hey_id";
 button.classList.add('dark');
 parag.classList.add('post');
+par.classList.add('post');
+
 
 var newPost=document.querySelectorAll("textArea");
-
+var anp=document.querySelectorAll("textArea");
 
 button.addEventListener('click',displayDate=> {
   //var newDiv=document.createElement('div');
   parag.innerHTML=new Date();
-  newPost=this.innerHTML;
-  
+ //  par.innerHTML=textArea.value;
+ par.textContent= document.getElementById("hey_id").value;
+
 } )
 
 
 container.appendChild(textArea);
 container.appendChild(button);
 container.appendChild(parag);
+container.appendChild(par);
 
 below.appendChild(container);
 
